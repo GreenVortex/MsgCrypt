@@ -20,8 +20,7 @@ namespace Project_Zefir
         //Form UI
         Point lastPoint;
         private void Form1_MouseMove(object sender, MouseEventArgs e)
-        {
-            if (e.Button == MouseButtons.Left)
+        {if (e.Button == MouseButtons.Left)
             {
                 this.Left += e.X - lastPoint.X;
                 this.Top += e.Y - lastPoint.Y;
@@ -33,7 +32,6 @@ namespace Project_Zefir
         {
             lastPoint = new Point(e.X, e.Y);
         }
-        //End Of UI
 
         //Encoder Function
         static public string EncodeTo64(string toEncode)
@@ -62,25 +60,25 @@ namespace Project_Zefir
             using (FileStream fs = File.Create("Encrypted Dump"))
             {
                 // Add some text to file    
-                byte[] author = new UTF8Encoding(true).GetBytes(Password.Text);
+                byte[] author = new UTF8Encoding(true).GetBytes(InputData.Text);
                 fs.Write(author, 0, author.Length);
             }
         }
 
         private void Encrypt_Click(object sender, EventArgs e)
         {
-            string myData = Password.Text;
+            string myData = InputData.Text;
             string myDataEncoded = EncodeTo64(myData);
-            Password.Text = myDataEncoded;
+            InputData.Text = myDataEncoded;
         }
 
         private void Decrypt_Click(object sender, EventArgs e)
         {
             try
             {
-                string myDataEncoded = Password.Text;
+                string myDataEncoded = InputData.Text;
                 string myDataUnencoded = DecodeFrom64(myDataEncoded);
-                Password.Text = myDataUnencoded;
+                InputData.Text = myDataUnencoded;
             }
             catch (System.FormatException)
             {
@@ -95,7 +93,7 @@ namespace Project_Zefir
 
         private void Clear_Click(object sender, EventArgs e)
         {
-            Password.Clear();
+            InputData.Clear();
         }
 
         private void Informator_Click(object sender, EventArgs e)
