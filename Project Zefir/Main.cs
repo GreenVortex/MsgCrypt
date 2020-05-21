@@ -27,7 +27,6 @@ namespace Project_Zefir
             }
 
         }
-
         private void Form1_MouseDown(object sender, MouseEventArgs e)
         {
             lastPoint = new Point(e.X, e.Y);
@@ -52,11 +51,13 @@ namespace Project_Zefir
 
         private void Download_Click(object sender, EventArgs e)
         {
+            //Check if file exists and if it does delete it
             if (File.Exists("Encrypted Dump"))
             {
                 File.Delete("Encrypted Dump");
             }
 
+            //Create file in IO stream for prcessing
             using (FileStream fs = File.Create("Encrypted Dump"))
             {
                 // Add some text to file    
@@ -65,6 +66,7 @@ namespace Project_Zefir
             }
         }
 
+        //Encryption button
         private void Encrypt_Click(object sender, EventArgs e)
         {
             string myData = InputData.Text;
@@ -72,6 +74,7 @@ namespace Project_Zefir
             InputData.Text = myDataEncoded;
         }
 
+        //Decryption method button
         private void Decrypt_Click(object sender, EventArgs e)
         {
             try
@@ -80,22 +83,26 @@ namespace Project_Zefir
                 string myDataUnencoded = DecodeFrom64(myDataEncoded);
                 InputData.Text = myDataUnencoded;
             }
+            //Error handler for attempting to encrypt string that has not being encrypted
             catch (System.FormatException)
             {
                 MessageBox.Show("You can not encrypt a string  that has not been encrypted", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
+        //Application ecit button
         private void Terminator_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
+        //Clear Data field button
         private void Clear_Click(object sender, EventArgs e)
         {
             InputData.Clear();
         }
 
+        //Usage Information
         private void Informator_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Below you will find tools in the following order; encrypt,decrypt,dump as file,clear","How to use",MessageBoxButtons.OK,MessageBoxIcon.Information);
