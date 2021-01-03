@@ -8,3 +8,13 @@ C:\Users\Jan\Documents\GitHub\C-\Encryptor\Project Zefir\obj\Debug\Encryptor.csp
 C:\Users\Jan\Documents\GitHub\C-\Encryptor\Project Zefir\obj\Debug\Encryptor.csproj.CoreCompileInputs.cache
 C:\Users\Jan\Documents\GitHub\C-\Encryptor\Project Zefir\obj\Debug\Project Zefir.exe
 C:\Users\Jan\Documents\GitHub\C-\Encryptor\Project Zefir\obj\Debug\Project Zefir.pdb
+C:\Users\Jan\Documents\GitHub\MsgCrypt\Project Zefir\bin\Debug\Project Zefir.exe.config
+C:\Users\Jan\Documents\GitHub\MsgCrypt\Project Zefir\bin\Debug\Project Zefir.exe
+C:\Users\Jan\Documents\GitHub\MsgCrypt\Project Zefir\bin\Debug\Project Zefir.pdb
+C:\Users\Jan\Documents\GitHub\MsgCrypt\Project Zefir\obj\Debug\Encryptor.csprojAssemblyReference.cache
+C:\Users\Jan\Documents\GitHub\MsgCrypt\Project Zefir\obj\Debug\Project_Zefir.Main.resources
+C:\Users\Jan\Documents\GitHub\MsgCrypt\Project Zefir\obj\Debug\Project_Zefir.Properties.Resources.resources
+C:\Users\Jan\Documents\GitHub\MsgCrypt\Project Zefir\obj\Debug\Encryptor.csproj.GenerateResource.cache
+C:\Users\Jan\Documents\GitHub\MsgCrypt\Project Zefir\obj\Debug\Encryptor.csproj.CoreCompileInputs.cache
+C:\Users\Jan\Documents\GitHub\MsgCrypt\Project Zefir\obj\Debug\Project Zefir.exe
+C:\Users\Jan\Documents\GitHub\MsgCrypt\Project Zefir\obj\Debug\Project Zefir.pdb
